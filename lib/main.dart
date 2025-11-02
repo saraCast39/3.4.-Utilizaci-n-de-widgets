@@ -31,79 +31,32 @@ class HomeScreen extends StatelessWidget {
       body: Stack(
         fit: StackFit.expand,
         children: [
-          
-          Image.asset(
-            'assets/fondo.jpg', 
+          Image.network(
+           'https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2021/01/masterclass-cover2.jpg',
             fit: BoxFit.cover,
           ),
-
           Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                
                 const Text(
-                  '¡Bienvenido al catalogo de peliculas !',
+                  '¡Bienvenido a El Catalogo de Peliculas!',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 26,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-
                 const SizedBox(height: 20),
-
-                // 🎨 Nombre de la app
                 const Text(
-                  '🎨 Mi App de Arte 🎨',
+                  'Catalogo de Peliculas',
                   style: TextStyle(
-                    color: Colors.amberAccent,
+                    color: Color.fromARGB(255, 95, 231, 46),
                     fontSize: 22,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-
                 const SizedBox(height: 40),
-
-                // 🧱 Tus widgets originales
-                Container(
-                  color: Colors.lightGreen,
-                  padding: const EdgeInsets.all(16),
-                  child: const Text(
-                    'Hello World',
-                    style: TextStyle(fontSize: 24, color: Colors.white),
-                  ),
-                ),
-
-                const SizedBox(height: 30),
-
-                Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    Container(
-                      width: 150,
-                      height: 150,
-                      color: Colors.lightGreenAccent,
-                    ),
-                    const Text(
-                      'Hola',
-                      style: TextStyle(color: Colors.white, fontSize: 18),
-                    ),
-                  ],
-                ),
-
-                const SizedBox(height: 30),
-
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
-                    SizedBox(width: 8),
-                    Text(
-                      'Bienvenidos',
-                      style: TextStyle(color: Colors.white, fontSize: 18),
-                    ),
-                  ],
-                ),
               ],
             ),
           ),
